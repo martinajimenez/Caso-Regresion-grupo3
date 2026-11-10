@@ -1,0 +1,15 @@
+# Archivos de sesión de R y RStudio
+.Rhistory
+.RData
+.Rproj.user/
+
+# Copias generadas por la reproducción aislada (script 12)
+*__REPRODUCCION_*/
+*__COMPLEMENTOS_*/
+
+# Temporales de Office y del sistema operativo
+~$*
+*.tmp
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,2 @@
+"n","p","diagnostico","estadistico_LM","grados_libertad_BP","p_valor_BP_aprox","asimetria_residuos","exceso_curtosis_residuos","max_leverage","n_leverage_superior_2p_sobre_n","max_Cook","n_Cook_superior_4_sobre_n"
+46300,36,"BP_auxiliar_resid2_sobre_prediccion",186.113611389491,1,2.24228509390099e-42,5.81796219710377,86.0442783038048,0.0120765546304736,4803,0.0664750869952355,2158

@@ -1,0 +1,5 @@
+ETAPA 8 CERTIFICADA - SOLO DIAGNOSTICO DE DESARROLLO
+Mismos IDs y respuestas para nueve modelos; 26279 pedidos por modelo.
+Metricas recalculadas desde predicciones y cotejadas con etapa 7.
+Sin modificar entradas previas (MD5); sin usar test; sin instalar paquetes.
+Comparacion complementaria averaging: ver archivo 08_averaging_resumen_diagnostico.csv.

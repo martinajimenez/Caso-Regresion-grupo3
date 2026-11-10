@@ -1,0 +1,8 @@
+ETAPA 10 - ADDENDUM DE AVERAGING COMPLEMENTARIO
+RMSE averaging 50/50: 9.90088708 dias
+RMSE Splines: 9.90243906 dias
+Diferencia averaging menos Splines: -0.00155198 dias
+El averaging no cambia el modelo RDS congelado Splines.
+La eleccion de las dos familias es retrospectiva al examen de desarrollo.
+No se usa test historico ni se demuestra superioridad estadistica.
+Las tablas historicas con nueve modelos se conservan como evidencia.

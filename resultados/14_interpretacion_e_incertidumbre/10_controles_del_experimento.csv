@@ -1,0 +1,8 @@
+"control","valor"
+"n_train_fijo",32995
+"n_calibracion_conocida",6819
+"n_enero_no_observable_al_corte",368
+"n_evaluacion_marzo",7083
+"max_diferencia_vs_fold2",6.3948846218409e-14
+"n_fondo_PDP",1500
+"n_ICE",40

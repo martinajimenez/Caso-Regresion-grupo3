@@ -1,0 +1,10 @@
+"archivo","tamano_bytes_original","cargado_en_etapa_1"
+"olist_customers_dataset.csv",9033957,TRUE
+"olist_geolocation_dataset.csv",61273883,FALSE
+"olist_order_items_dataset.csv",15438671,TRUE
+"olist_order_payments_dataset.csv",5777138,FALSE
+"olist_order_reviews_dataset.csv",14451670,FALSE
+"olist_orders_dataset.csv",17654914,TRUE
+"olist_products_dataset.csv",2379446,TRUE
+"olist_sellers_dataset.csv",174703,TRUE
+"product_category_name_translation.csv",2613,FALSE

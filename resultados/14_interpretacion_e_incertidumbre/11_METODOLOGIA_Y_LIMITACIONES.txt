@@ -1,0 +1,18 @@
+ETAPA 14: ANALISIS EXPLORATORIO DE DESARROLLO, NO TEST NUEVO
+Intervalos/importancia: MISMO Splines del fold 2, verificado contra predicciones enero; NO reentrenar tras calibrar.
+Entrenamiento anterior al 01-01-2018; calibracion enero con entregas conocidas antes del 01-03-2018.
+Evaluacion marzo entre pedidos entregados observables al corte global 01-07-2018.
+Familia, periodos y analisis elegidos despues de examinar desarrollo: resultado retrospectivo.
+Scores absolutos y cuantil de orden ceil((n+1)*nivel); limite inferior intersectado con duraciones >=0.
+80%/90% son objetivos de diseno, no probabilidades garantizadas para cada pedido.
+Dependencia temporal, drift y exclusion de entregas no observables impiden afirmar garantia conformal estandar.
+Informar cobertura Y anchura Y interval score; buena cobertura con intervalo ancho puede ser poco util.
+Importancia por permutacion de cinco grupos en marzo; SD entre 5 repeticiones es SOLO variacion Monte Carlo.
+Los grupos preservan pares internos, pero permutar puede romper dependencias entre grupos. No implica causalidad.
+PDP/ICE: OTRO objeto, candidato FINAL Etapa 11; descripcion de su funcion, no evaluacion fuera de muestra.
+Fondo 1.500 pedidos maduros, ICE 40, rango P5-P95, semilla fija; variables correlacionadas pueden producir combinaciones irreales.
+No se cambiaron las diez entradas B, los ajustes originales, sus predicciones ni su ranking.
+El candidato FINAL Etapa 11 no hereda automaticamente estos intervalos del modelo fijo de enero.
+Julio-agosto 2018 no se leyo ni se utilizo. Evaluacion final independiente aun pendiente.
+Fuentes metodologicas: https://scikit-learn.org/stable/modules/partial_dependence.html
+https://mapie.readthedocs.io/en/stable/content/exchangeability-testing/

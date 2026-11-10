@@ -1,0 +1,18 @@
+ETAPA 9 - INFERENCIA Y DIAGNOSTICOS (NO ES UNA NUEVA EVALUACION DEL TEST)
+Unidad: pedido; respuesta: dias entre aprobacion y entrega real; SOLO TRAIN fold 4.
+n=46300; coeficientes (incl. intercepto)=36; alpha=0.05; IC nominal 95 %.
+Modelo: OLS B original de pedido y geografia, construido con su receta y contrastado por coeficientes.
+Diferencia maxima vs coeficientes archivados: 4.97379915032e-14
+La inferencia es CONDICIONAL/ASOCIATIVA; no demuestra causalidad ni importancia predictiva individual.
+Errores HC3: ayudan frente a heterocedasticidad, NO corrigen dependencia temporal, sesgo de seleccion
+ni incertidumbre de cambios de distribucion. p-valores nominales son exploratorios ante muchos contrastes.
+VIF se calcula por COLUMNA de diseno; en estados dummies NO equivale a GVIF por variable categórica.
+Breusch-Pagan auxiliar usa residuo^2 sobre valor ajustado (1 df); p-valor asintotico orientativo.
+Con n grande, los p-valores pueden ser muy pequenos para asociaciones operativamente modestas.
+In-sample R2, RMSE y residuos del fold 4 NO se comparan con metricas externas de validacion.
+Diagnosticos graficos usan muestra aleatoria reproducible; NO se eliminaron outliers.
+No se calcularon metricas del test julio-agosto 2018 ni se seleccionaron modelos en esta etapa.
+Analisis realizado despues de conocer el test del proyecto historico; no es una evaluacion nueva independiente.
+Predictores de items, flete y ubicacion suponen disponibilidad al aprobar; no verificable fila a fila.
+Para la defensa: informar coeficientes, IC, heterocedasticidad, colinealidad, influencia y limites.
+Paquetes externos: NINGUNO (stats y graphics incluidos en R base).

@@ -1,0 +1,8 @@
+ESTADO: APROBADO
+Comparaciones CSV: 30 / 30
+Figuras nuevas regeneradas: 16 / 16
+Proyecto de origen intacto (MD5): TRUE
+Etapas 13-16 ejecutadas en Rscript --vanilla separado.
+Este control no reentrena 01-11 ni sustituye su evidencia historica.
+No es un test predictivo independiente. No se consulto julio-agosto 2018.
+R: R version 4.6.2 (2026-10-29 ucrt)

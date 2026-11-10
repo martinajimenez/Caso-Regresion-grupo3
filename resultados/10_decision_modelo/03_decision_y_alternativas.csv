@@ -1,0 +1,4 @@
+"tipo_decision","modelo","razon","estado"
+"Candidato principal","Splines_B_anidado","Menor RMSE medio de los cuatro folds externos de desarrollo; ventaja pequena frente a Ridge y OLS.","Recomendacion retrospectiva; NO es un modelo final ya reentrenado ni un test independiente."
+"Modelo para interpretacion","B_pedido_geografia","Regresion lineal interpretable, con inferencia HC3 condicionada a supuestos y limitaciones.","Apoyo explicativo; no sustituye la validacion predictiva."
+"Referencia simple","Baseline_media_train","Media historica calculada solamente con entrenamiento; comparador operativo minimo.","Comparador; no utilizar la media real del mes futuro."

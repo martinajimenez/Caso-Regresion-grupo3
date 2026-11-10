@@ -1,0 +1,11 @@
+ETAPA 13: DIAGNOSTICO DESCRIPTIVO DE DESARROLLO
+RMSE, MAE, R2 y sesgo originales conservados. Cero entrenamientos nuevos.
+01: metricas por fold. 02: promedios simples entre folds. 03: calculos combinados APARTE.
+Mediana/P90 combinados no son promedios de medianas/P90 de folds.
+Tolerancias +/-3 y +/-5 dias ILUSTRATIVAS; requieren justificacion de negocio.
+Pearson/Spearman son asociaciones complementarias, no reemplazos del error. Baseline constante: NA por fold.
+Calibracion agrupada por prediccion; tramos de duracion REAL exclusivamente retrospectivos.
+Error = predicho - real; negativo = subestimacion. Todos los extremos se conservan.
+Sensibilidad RMSE/MAE exclusivamente INTERNA; no es validacion externa de modelos reoptimizados.
+Correlacion y forma de histogramas no eligen automaticamente la metrica.
+Periodos ya examinados: estos resultados NO constituyen un test independiente.

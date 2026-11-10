@@ -1,0 +1,6 @@
+ETAPA 7 CERTIFICADA v1.1
+Misma especificacion B y IDs de las etapas 4-6.
+Modelos CART, ranger y gbm seleccionados solo con 3 folds internos por corte.
+Metrica por pedido recalculada y cotejada para las 9 alternativas.
+Solo desarrollo; no se evalua el test original ni se alteran datos previos.
+AVERAGING 50/50 complementario certificado aparte (16_CONTROL_AVERAGING_APROBADO.txt).

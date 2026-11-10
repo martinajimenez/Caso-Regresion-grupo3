@@ -1,0 +1,3 @@
+REPRODUCCION ETAPAS 01-11 Y 13-16: COMPLETADA EN PROCESO AISLADO
+R: R version 4.6.2 (2026-10-29 ucrt)
+NO se evalua aqui el test historico como muestra independiente.

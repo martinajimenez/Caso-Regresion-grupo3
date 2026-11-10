@@ -1,0 +1,9 @@
+CONTROL APROBADO - ETAPA 5 v1.0
+4 folds externos identicos a Etapa 4.
+3 validaciones internas cronologicas, dentro de cada train externo.
+Preprocesamiento de estado y glmnet standardize solo en train.
+Diseno de predictores B cotejado con coeficientes de OLS etapa 4.
+Grilla de alpha/lambda y reglas min/1se documentadas.
+Se recalcularon metricas desde predicciones individuales por ID.
+Comparacion principal: baseline, OLS B y regularizados lambda.min.
+Ni fechas futuras ni test historico participaron en seleccionar modelos.

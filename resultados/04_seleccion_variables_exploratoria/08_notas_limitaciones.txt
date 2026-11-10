@@ -1,0 +1,18 @@
+ETAPA 4: ANALISIS EXPLORATORIO DE SELECCION DE VARIABLES - POST TEST
+No altera ni recalcula los resultados historicos de las Etapas 1 a 8.
+Mismos IDs y 4 folds temporales, regla de madurez 45 dias.
+Los 6 candidatos se declararon ANTES de mirar los nuevos resultados externos.
+Por cada fold externo, 3 validaciones internas coincidentes con Etapa 5.
+Las categorias y transformaciones se ajustaron SOLO con TRAIN interno.
+Los candidatos se ordenan por RMSE medio interno. Empate: menor complejidad.
+SOLO se evalua externamente el ganador de la seleccion interna.
+Las referencias OLS B y media historica provienen de archivos congelados.
+Se comprueba que recomputar OLS B da identicas predicciones al historico.
+La inspeccion previa de metricas externas introduce riesgo de meta-sobreajuste.
+Esta es una auditoria prospectiva dentro de desarrollo, pero POST-HOC al test previo.
+No constituye evidencia independiente nueva para generalizacion final.
+Se ha supuesto disponibilidad de precios, flete y geografia al aprobar; no demostrada fila a fila.
+Correlacion NO equivale a importancia condicional/causal ni prueba de seleccion.
+No se imputan etiquetas ni se eliminan observaciones extremas.
+Las figuras no sustituyen los resultados numericos por fold.
+El archivo 09_CONTROL_SELECCION_APROBADO.txt se crea solo al superar todas las verificaciones.

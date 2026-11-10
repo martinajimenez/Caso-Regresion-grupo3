@@ -1,0 +1,7 @@
+"especificacion","n_variables_originales","variables"
+"B_original_10",10,"hora_aprobacion; dia_semana; mes_aprobacion; horas_desde_compra; estado_cliente; n_items; n_vendedores; precio_total_brl; flete_total_brl; todos_vendedores_mismo_estado"
+"R1_geografia_flete",3,"estado_cliente; todos_vendedores_mismo_estado; flete_total_brl"
+"R2_geo_flete_tiempo",6,"estado_cliente; todos_vendedores_mismo_estado; flete_total_brl; mes_aprobacion; dia_semana; horas_desde_compra"
+"R3_geo_flete_pedido",6,"estado_cliente; todos_vendedores_mismo_estado; flete_total_brl; precio_total_brl; n_items; n_vendedores"
+"R4_geo_flete_pedido_mes",7,"estado_cliente; todos_vendedores_mismo_estado; flete_total_brl; precio_total_brl; n_items; n_vendedores; mes_aprobacion"
+"R5_sin_estado_cliente",9,"hora_aprobacion; dia_semana; mes_aprobacion; horas_desde_compra; n_items; n_vendedores; precio_total_brl; flete_total_brl; todos_vendedores_mismo_estado"

@@ -1,0 +1,7 @@
+CONTROL APROBADO - SELECCION EXPLORATORIA (ETAPA 4)
+Solo desarrollo: sin acceso a resultados del test historico.
+Se reprodujeron 12 folds internos de la Etapa 5.
+Se eligieron candidatos unicamente por RMSE interno.
+Se evaluo fuera de los entrenamientos internos solo el ganador.
+Se verificaron IDs, fechas, etiquetas, predicciones OLS B y metricas.
+Se conservaron byte a byte los resultados previos de Etapas 1-8.

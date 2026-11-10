@@ -1,0 +1,20 @@
+GRUPO 3 / ETAPA 2 - VARIABLES CANDIDATAS, NO MODELOS
+R: R version 4.6.1 (2026-06-24 ucrt)
+MD5 dataset.zip: f2f3704ec08d55ef94fc2887bdc96472
+Pedidos de desarrollo: 86162
+Articulos de desarrollo: 97866
+Sin articulos: 594
+Con etiqueta madura 45 dias: 75172
+Muestreo de desarrollo en junio esta censurado: NO interpretar su mediana como mejora operativa.
+Tiempo de respuesta (duracion) = dias entre aprobacion y entrega observada.
+Tardanza = max(0, fecha REAL calendario - fecha PROMETIDA calendario), en dias.
+Tardanza es diagnostico descriptivo SEPARADO, NO es variable predictora.
+Se cuantifican faltantes pero NO se imputan. Una media se calcula solo con el train del fold.
+No imputar fechas de entrega ni rellenar cero cuando faltan articulos sin justificarlo.
+Regla de 45 dias reduce censura por recencia, pero NO elimina la seleccion de entregados.
+Los metadatos de seller y products carecen de historial de vigencia por pedido.
+La coincidencia geografica se define para TODOS los vendedores por pedido; no se elige al primero.
+Ninguna imputacion, codificacion estadistica ni seleccion se aplico globalmente.
+No se evaluo test. No se entrenaron ni optimizaron modelos.
+Proximo paso: acordar variables admisibles y construir folds temporales con transformaciones solo en train.
+El test historico julio-agosto ya es conocido del proyecto antiguo; requiere nueva evidencia independiente.

@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Guardar todos los archivos byte a byte, sin convertir finales de línea (LF/CRLF).
+# Así las huellas SHA-256 y MD5 del proyecto coinciden después de clonar el repositorio.
+* -text

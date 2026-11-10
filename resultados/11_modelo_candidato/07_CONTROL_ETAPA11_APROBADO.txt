@@ -1,0 +1,10 @@
+ETAPA 11 APROBADA - CANDIDATO SPLINES B ENTRENADO SOLO CON DESARROLLO
+Fecha de corte (UTC): 2018-07-01 00:00:00
+Pedidos de entrenamiento: 75172
+Configuracion elegida: ns_df5_geo1
+RMSE media de ventanas de desarrollo examinadas: 9.894705
+ADVERTENCIA: esa media NO es una estimacion test independiente del modelo final.
+Maxima diferencia etapa6: 4.97e-14
+Modelo MD5: c58bda505905e0065ed09085859c7f23
+Resultados de Etapas 1-10 sin cambios MD5.
+El test historico NO fue consultado o recalculado.

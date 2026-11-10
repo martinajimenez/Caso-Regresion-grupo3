@@ -1,0 +1,20 @@
+GRUPO 3 - PROYECTO OLIST NUEVO - ETAPA 1
+R: R version 4.6.1 (2026-06-24 ucrt)
+Directorio: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102
+MD5 del ZIP original: f2f3704ec08d55ef94fc2887bdc96472
+Ventana de desarrollo: [2017-01-01, 2018-07-01) por aprobacion
+Etiqueta observable: estado delivered; entrega antes de 2018-07-01 y posterior a aprobacion
+Fechas interpretadas con UTC tecnico; huso real de Brasil no verificado
+NO se exploraron ni evaluaron etiquetas de julio-agosto 2018
+NO se entrenaron modelos ni se eligieron variables mediante scores
+NO se eliminaron valores extremos por su magnitud
+NO se ejecutaron pruebas de hipotesis; alfa=0.05 se reserva para inferencia
+Pedidos aprobados de desarrollo: 86162
+Desarrollo etiquetado valido: 81950
+Desarrollo no etiquetado valido: 4212
+Media dias: 12.7258
+Mediana dias: 10.4548
+P99 dias: 46.3182
+Maximo dias: 208.501
+Advertencia metodologica: el test historico fue visto en el proyecto anterior; no vuelve a ser independiente.
+Pendiente etapa 2: auditar origen/disponibilidad real de predictores y construir variables por fold.

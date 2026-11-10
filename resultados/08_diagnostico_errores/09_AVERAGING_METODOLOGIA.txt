@@ -1,0 +1,4 @@
+AVERAGING: DIAGNOSTICO COMPLEMENTARIO REVISADO
+Peso fijo 0.5 Splines y 0.5 Boosting. Comparacion retrospectiva.
+Mismos pedidos en los cuatro folds; test historico no consultado.
+El ranking original de nueve modelos no se reescribe.

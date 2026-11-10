@@ -1,0 +1,2 @@
+C:/Users/jmart/AppData/Local/R/win-library/4.6
+C:/Program Files/R/R-4.6.2/library

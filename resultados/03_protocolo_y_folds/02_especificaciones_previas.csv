@@ -1,0 +1,4 @@
+"especificacion","numero_variables","variables","justificacion"
+"A_temporal",4,"hora_aprobacion; dia_semana; mes_aprobacion; horas_desde_compra","referencia con atributos directamente fechados al aprobar"
+"B_pedido_geografia",10,"hora_aprobacion; dia_semana; mes_aprobacion; horas_desde_compra; estado_cliente; n_items; n_vendedores; precio_total_brl; flete_total_brl; todos_vendedores_mismo_estado","anade informacion de pedido y rutas; supuesto de disponibilidad historica"
+"C_catalogo_exploratoria",12,"hora_aprobacion; dia_semana; mes_aprobacion; horas_desde_compra; estado_cliente; n_items; n_vendedores; precio_total_brl; flete_total_brl; todos_vendedores_mismo_estado; peso_total_g; volumen_total_cm3","anade peso y volumen del catalogo; riesgo adicional de vigencia historica"

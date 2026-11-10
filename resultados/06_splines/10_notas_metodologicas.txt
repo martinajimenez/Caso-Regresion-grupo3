@@ -1,0 +1,13 @@
+ETAPA 6 - SPLINES NATURALES v1.0
+R base + paquete 'splines' incluido con R. Sin instalaciones nuevas.
+Misma especificacion B: diez variables originales, codificacion de estado entrenada en cada train.
+Formula: OLS B con splines naturales de log(flete) y log(precio), df=3,4,5.
+Se evalua con/sin interaccion previamente definida de geografia x log(flete).
+Seis configuraciones escogidas SOLO en validacion interna temporal (tres folds).
+Cuatro folds externos identicos a las Etapas 4 y 5; no se usan sus valores para elegir splines.
+Se conservan por separado errores del subgrupo geografico.
+La comparacion con Ridge, Lasso, ElasticNet y OLS B tiene los mismos IDs de validacion.
+Las medias de metricas de cuatro folds no garantizan superioridad estadistica.
+La disponibilidad al aprobar del estado del vendedor es supuesto historico sin corroborar.
+Los resultados son validaciones exploratorias posteriores a conocer el test ORIGINAL; no test nuevo.
+No se consulto el test historico, no se ajusto ningun modelo definitivo nuevo.

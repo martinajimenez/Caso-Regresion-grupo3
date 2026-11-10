@@ -1,0 +1,12 @@
+CONTROL ETAPA 10: APROBADO
+Archivos de etapas anteriores sin cambios (MD5): 105
+Modelos y folds: 36 = 9 x 4
+Predicciones comprobadas por order_id y respuesta real: 236511
+Diferencia maxima entre resumen y folds: 3.3751e-14
+Modelo con menor RMSE medio observado: Splines_B_anidado
+MD5 del acta de decision: 6aad48c953502ff42e3d54c21beeca35
+No se reentreno ningun modelo.
+No se leyo ni evaluo el test julio-agosto 2018.
+No se genero un modelo predictivo final nuevo: esa etapa esta pendiente.
+Modelo con menor RMSE medio (diez alternativas, comparacion retrospectiva): Averaging_Splines_Boosting
+La seleccion de candidato Splines se mantiene de acuerdo con el protocolo previo.

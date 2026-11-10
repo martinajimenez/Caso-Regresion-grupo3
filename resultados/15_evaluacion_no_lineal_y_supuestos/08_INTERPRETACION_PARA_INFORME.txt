@@ -1,0 +1,28 @@
+ETAPA 15 - EVALUACION MAS ALLA DEL R2 Y SUPUESTOS (RESPUESTA A LA ORIENTACION DOCENTE)
+
+MENSAJE PRINCIPAL: el modelo no esta mal; evaluarlo solo con R2 no corresponde.
+
+1. Por que el R2 no basta
+- La respuesta es asimetrica: mediana 12.8 dias, media 15.3, P99 53.0, maximo 171.
+- El R2 mide la varianza explicada por una relacion lineal y esa varianza la dominan pocos pedidos muy demorados.
+- Splines: R2 = 0.171, pero Spearman = 0.600: el modelo ordena bien los pedidos aunque el R2 sea bajo.
+- OLS B: R2 = 0.167, Spearman = 0.596.
+- Recta real ~ predicho de Splines: pendiente 1.32 (ideal 1). Las predicciones estan comprimidas
+  y el modelo se queda corto con los pedidos mas demorados (figura 01, tramos altos).
+- Frente al baseline, Splines reduce el RMSE en 1.439 dias en promedio (SE descriptivo 0.147), mejor en 4 de 4 folds.
+- Se sigue reportando el R2, pero la decision usa RMSE, MAE, diferencias pareadas frente al baseline y Spearman.
+
+2. Supuestos con la receta del curso (lm en el train del fold 4, n = 46300)
+- Normalidad, shapiro.test (submuestra fija de 5000 residuos): OLS B p < 2.2e-16; Splines p < 2.2e-16.
+- Homocedasticidad, lmtest::bptest: OLS B p < 2.2e-16; Splines p < 2.2e-16.
+- Independencia, lmtest::dwtest (orden de aprobacion): OLS B DW = 1.948; Splines DW = 1.947.
+- Multicolinealidad, car::vif (OLS B, estado del cliente como factor -> GVIF): maximo 2.55 (log_flete); 0 variables sobre 5.
+- Graficos plot(modelo, which = 1:4) en las figuras 03 (OLS B) y 04 (Splines).
+- Lectura: los residuos no son normales y la varianza no es constante. Como dice el curso, esto sugiere
+  transformar la respuesta o revisar la especificacion (ver etapa 16, log(dias)).
+- La prediccion puntual no exige normalidad; lo afectado son los intervalos clasicos de los coeficientes.
+
+3. Limitaciones
+- shapiro.test acepta como maximo 5000 datos: se usa una submuestra fija con semilla.
+- Con miles de datos las pruebas rechazan desviaciones pequenas; por eso se leen junto con los graficos.
+- Folds temporales ya examinados en etapas previas; no es un test nuevo. Test julio-agosto 2018 no consultado.

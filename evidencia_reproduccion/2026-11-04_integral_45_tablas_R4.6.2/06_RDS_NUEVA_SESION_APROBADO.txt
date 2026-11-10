@@ -1,0 +1,3 @@
+RDS ABIERTO EN PROCESO NUEVO
+100 predicciones finitas
+Configuracion: ns_df5_geo1

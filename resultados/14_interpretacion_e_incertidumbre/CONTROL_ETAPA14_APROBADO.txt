@@ -1,0 +1,6 @@
+ESTADO: APROBADO EN R
+Reconstruccion fold 2, diferencia maxima: 6.394884621840902e-14
+Train: 32995 | calibracion conocida: 6819 | evaluacion marzo: 7083
+Conjuntos disjuntos; observabilidad temporal comprobada; candidato final y resultados historicos intactos.
+Cero consultas del test historico. No se afirma cobertura futura ni evaluacion final independiente.
+Entorno: R version 4.3.3 (2024-02-29)

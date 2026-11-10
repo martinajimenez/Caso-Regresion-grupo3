@@ -1,0 +1,2 @@
+"modelo","rmse_promedio","sd_rmse_folds","mae_promedio","r2_promedio","sesgo_promedio"
+"Averaging_Splines_Boosting",9.90088708147295,0.6849607140719,6.34467589672083,0.171381946150984,-2.4138321494972

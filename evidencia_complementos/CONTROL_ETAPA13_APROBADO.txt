@@ -1,0 +1,6 @@
+ESTADO: APROBADO EN R
+10 alternativas; 26.279 pedidos comunes por alternativa; cuatro folds.
+40 metricas historicas (RMSE/MAE/R2/sesgo) cotejadas con tolerancia 1e-8.
+Comparaciones internas: 28 ; cambios de configuracion: 16
+Resultados historicos intactos (MD5). Test historico no consultado.
+Entorno: R version 4.3.3 (2024-02-29)

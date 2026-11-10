@@ -1,0 +1,14 @@
+ETAPA 7 - CART, RANDOM FOREST Y GRADIENT BOOSTING v1.1
+Todas las familias reciben las diez variables ORIGINALES de B transformadas con la misma receta train-only.
+Se comparan exactamente los mismos pedidos por fold.
+Cuatro folds externos y tres internos por fold (mismas ventanas que etapas 5 y 6).
+Cada algoritmo escoge 1 de 3 configuraciones con RMSE de validacion INTERNA.
+CART usa rpart sin xval interno adicional; Random Forest usa ranger con semilla y un hilo.
+Boosting usa gbm con gaussian, bag.fraction 0.8, semilla y validacion temporal anidada.
+Subgrupo geografico se guarda APARTE y no determina la seleccion.
+Las medias de cuatro folds son descriptivas; no prueban superioridad estadistica.
+La categoria de estado del vendedor se basa en informacion historica asumida al aprobar.
+RESULTADOS exploratorios de desarrollo posterior a la consulta del test original.
+No se volvio a ejecutar ni evaluar el test historico.
+Version R: 4.6.1
+Paquetes: rpart=4.1.27; ranger=0.18.0; gbm=2.3.1

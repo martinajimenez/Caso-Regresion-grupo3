@@ -1,0 +1,7 @@
+CONTROL DE INTEGRIDAD ETAPA 3 v1.1: APROBADO
+Archivos historicos protegidos por MD5: 20
+Filas de matrices: 512
+Folds: 1,2,3,4
+Entradas antiguas: sin modificacion.
+Validacion externa y test: no utilizados en correlaciones.
+Modelos, predicciones y metricas originales: intactos.

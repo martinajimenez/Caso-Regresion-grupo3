@@ -1,0 +1,9 @@
+CONTROL APROBADO - ETAPA 15
+Modelos evaluados: 10
+Pedidos de validacion por modelo: 26279
+Mismos pedidos y respuestas para todos los modelos (verificado).
+lm() reproduce lo archivado: max dif OLS B 9.66e-13, Splines 1.12e-12.
+Receta del curso: lm, plot which 1:4, shapiro.test, lmtest::bptest, lmtest::dwtest, car::vif.
+Resultados de etapas 01-14 sin cambios MD5.
+No se reentrenaron los modelos de comparacion ni se consulto el test historico.
+R: R version 4.6.2 (2026-10-29 ucrt)

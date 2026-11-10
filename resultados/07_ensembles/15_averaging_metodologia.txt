@@ -1,0 +1,8 @@
+AVERAGING COMPLEMENTARIO 50% SPLINES + 50% GRADIENT BOOSTING
+Pesos fijos, elegidos sin optimizacion sobre validaciones externas.
+Mismo order_id, respuesta y fold para ambos componentes; comprobados.
+Cada componente respeta su propio ajuste con TRAIN y seleccion interna.
+Es una comparacion retrospectiva de desarrollo, posterior a examinar los modelos.
+No se declara ganancia significativa ni se sustituye automaticamente el RDS Splines.
+No constituye un nuevo test independiente; test julio-agosto 2018 no consultado.
+Las nueve comparaciones historicas y sus CSV se conservan como referencia.

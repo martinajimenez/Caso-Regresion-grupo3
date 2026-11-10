@@ -1,0 +1,7 @@
+ESTADO: APROBADO
+Comparaciones CSV: 45 / 45
+Lectura RDS en segunda sesion: APROBADA
+Archivos del proyecto original intactos (MD5): TRUE
+Ruta copia aislada: C:/Users/jmart/Downloads/Grupo3_Olist_Codigo_Final_Entrega/Grupo3_Olist_Laboratorio__REPRODUCCION_20261104_224720
+No se consulto un test independiente nuevo ni se reclamo un nuevo RMSE de test.
+Un proceso Rscript --vanilla aislado no demuestra por si solo portabilidad entre computadores.

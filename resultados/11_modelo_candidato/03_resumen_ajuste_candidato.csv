@@ -1,0 +1,2 @@
+"n_entrenamiento","n_coeficientes","rango","configuracion","rmse_train_no_independiente","mae_train_no_independiente","sesgo_train_no_independiente","diferencia_maxima_reconstruccion_etapa6"
+75172,46,46,"ns_df5_geo1",8.58920315128892,5.44888484795785,-5.34792034819176e-13,4.9737991503207e-14

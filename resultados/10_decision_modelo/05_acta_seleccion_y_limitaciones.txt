@@ -1,0 +1,43 @@
+ETAPA 10 - DECISION METODOLOGICA RETROSPECTIVA SOBRE DESARROLLO
+Caso 1 Olist | Grupo 3 | Estadistica Aplicada
+
+OBJETIVO Y ALCANCE
+Se documenta una recomendacion a partir de metricas archivadas, no se ajusta un nuevo modelo.
+Los cuatro meses de validacion son diciembre 2017 y enero-marzo 2018.
+Se comparan nueve alternativas en la misma especificacion B cuando corresponde:
+10 variables originales, con folds externos comunes y ajustes de hiperparametros internos.
+
+ELECCION DOCUMENTADA
+Candidato de mejor RMSE medio observado: Splines_B_anidado.
+RMSE medio de Splines: 9.902439 dias.
+R2 medio de Splines: 0.170852.
+RMSE de OLS B: 9.925667 dias; diferencia OLS menos Splines: 0.023228 dias.
+RMSE de baseline media historica: 11.340962 dias; mejora relativa Splines: 12.684%.
+La ventaja frente a OLS/Ridge es pequena; no se presenta como superioridad estadistica demostrada.
+Los cuatro folds no son replicaciones independientes: hay ventanas de entrenamiento superpuestas.
+No se calcula valor p para comparar modelos con cuatro folds correlacionados.
+
+VARIABLES Y AJUSTE
+La seleccion exploratoria con validacion interna conservo las 10 variables B en los cuatro folds.
+La matriz de correlaciones sirve como diagnostico; correlacion no equivale a importancia predictiva.
+La eleccion de grados de libertad/interacciones de Splines VARIO por fold:
+fold 1: ns_df3_geo0; fold 2: ns_df3_geo0; fold 3: ns_df4_geo0; fold 4: ns_df5_geo1
+Por tanto, NO corresponde congelar automaticamente una de esas cuatro configuraciones.
+Para un ajuste final sobre desarrollo completo debe realizarse una nueva seleccion interna temporal
+y guardar formula, receta de predictores, transformaciones, objeto RDS, semillas y huellas MD5.
+
+RESTRICCIONES QUE DEBEN DECLARARSE
+1) Los resultados corresponden a VALIDACION DE DESARROLLO y su inspeccion ha guiado revisiones posteriores.
+2) El test julio-agosto 2018 ya se evaluo en el proyecto antiguo: NO es un nuevo test independiente.
+3) La evaluacion verdaderamente independiente requiere nuevos datos o acuerdo explicito con el profesor.
+4) Varios predictores B tienen disponibilidad historica por registro NO demostrada.
+5) La respuesta se calcula solo sobre pedidos entregados: hay sesgo de seleccion posible.
+6) Las entregas mas largas presentan grandes errores y sesgo de subestimacion.
+7) La inferencia OLS HC3 del fold 4 no prueba que Splines sea causal ni superior.
+
+DECISION FINAL DEL PROYECTO
+Candidato prioritario para refinamiento/documentacion: Splines_B_anidado (especificacion B).
+Comparador interpretable y respaldo: OLS B; comparador minimo: media historica.
+ESTADO: decision sobre desarrollo documentada; ajuste final nuevo y test independiente PENDIENTES.
+No modificar resultados archivados ni reconsultar el test antiguo para optimizar.
+

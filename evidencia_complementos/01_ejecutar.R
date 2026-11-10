@@ -1,0 +1,5 @@
+args <- commandArgs(trailingOnly=TRUE)
+setwd(args[1])
+source('scripts/13_diagnostico_complementario.R',encoding='UTF-8')
+source('scripts/14_interpretacion_e_incertidumbre.R',encoding='UTF-8')
+capture.output(sessionInfo(),file='12_control_complementos/sessionInfo.txt')

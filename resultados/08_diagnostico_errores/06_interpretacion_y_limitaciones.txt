@@ -1,0 +1,13 @@
+ETAPA 8: DIAGNOSTICO DESCRIPTIVO POSTERIOR A VALIDACION TEMPORAL
+Se utilizan exclusivamente predicciones de desarrollo de las etapas 4 a 7; no se ajustan modelos.
+Todas las alternativas tienen las mismas 26279 observaciones evaluadas en cuatro folds.
+El RMSE y R2 mostrados en la tabla principal son MEDIAS de metricas por fold, no metricas de un conjunto combinado.
+El sesgo = prediccion - duracion real. Negativo significa subestimacion.
+Los tramos por DURACION REAL se usan solo para diagnostico retrospectivo: no se pueden asignar a un pedido sin saber la entrega.
+La concentracion del error cuadratico en entregas largas no autoriza suprimirlas de la evaluacion.
+Con cuatro folds temporales no afirmamos superioridad estadistica por pequenas diferencias de RMSE.
+Predictores de articulo/vendedor sujetos a supuesto de disponibilidad al aprobar el pedido.
+Los periodos de test de julio-agosto de 2018 ya se conocieron en el proyecto historico:
+no se consultan ni se consideran test virgen de esta reconstruccion.
+Para la defensa: un R2 externo negativo es posible y se conserva en la comparacion.
+R ejecutado: R version 4.6.1 (2026-06-24 ucrt)

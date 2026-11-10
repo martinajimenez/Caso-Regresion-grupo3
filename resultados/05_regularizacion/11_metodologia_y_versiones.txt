@@ -1,0 +1,18 @@
+R: R version 4.6.1 (2026-06-24 ucrt)
+glmnet: 5.1
+Semilla: 20261023
+Folds externos: 4
+Folds internos: 3
+Lambda grilla: 10 ^ seq(-3, 2, length.out=31)
+Alpha grilla Elastic Net: 0.25, 0.50, 0.75
+Regla principal: lambda.min; lambda.1se solo sensibilidad.
+ElasticNet alpha seleccionado por RMSE interno minimo.
+Mismas diez variables B y misma poblacion validada para todos.
+Todas las agrupaciones de estados y estandarizacion: SOLO train.
+Folds internos temporales anidados SOLO en train externo.
+La tabla principal NO mezcla A, B, C, subgrupos ni 1-SE.
+Si lambda_min_en_borde es TRUE, ampliar grilla en siguiente iteracion sin test.
+NO se usa test historico; el desarrollo actual es exploratorio posterior al test original.
+La disponibilidad historica exacta de datos de vendedor/pedido es supuesto no probado.
+La media de RMSE de folds es descriptiva; no prueba superioridad estadistica.
+El nivel alfa de significancia 0.05 NO es glmnet alpha ni un umbral de RMSE.

@@ -1,0 +1,4 @@
+AVERAGING: APROBADO - SOLO DESARROLLO
+4 folds; mismos 26279 pedidos; pesos predeterminados de 0.5 y 0.5
+RMSE medio: 9.9008870815
+Sin nuevos ajustes de modelos ni consulta de test historico

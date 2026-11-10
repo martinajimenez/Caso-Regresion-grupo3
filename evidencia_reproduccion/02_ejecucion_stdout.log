@@ -1,0 +1,324 @@
+=== ETAPA 12: EJECUCION AISLADA, Rscript --vanilla ===
+Carpeta: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102 
+R: R version 4.6.1 (2026-06-24 ucrt) 
+
+==> 01 - Datos originales 
+
+======================================================================
+ETAPA 1 COMPLETADA - SIN ENTRENAR MODELOS NI EVALUAR TEST
+Pedidos originales: 99441 
+Pedidos de desarrollo: 86162 
+Etiquetas validas al corte: 81950 
+Tiempo mediano de entrega: 10.45 dias
+Resultados: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/01_revision_datos 
+Graficos: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/01_revision_datos 
+======================================================================
+
+==> 02 - Variables y madurez 
+
+=================================================================
+ETAPA 2 COMPLETADA - CANDIDATAS CONSTRUIDAS; SIN MODELOS NI TEST
+Pedidos de desarrollo: 86162 
+Etiquetas maduras 45 dias: 75172 
+Variables candidatas: 12 
+Pedidos sin articulos: 594 
+Promesas evaluadas solo en desarrollo maduro: 75172 
+Porcentaje con tardanza: 7.56 %
+Archivos: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/02_variables_candidatas 
+=================================================================
+
+==> 03 - Protocolo y folds 
+
+=======================================================================
+ETAPA 3 COMPLETADA - PROTOCOLO Y FOLDS; SIN MODELOS NI TEST
+Especificaciones A/B/C: 4 / 10 / 12 variables
+Fold 1 2017-12 | train: 28322 | validacion: 5675 
+Fold 2 2018-01 | train: 32995 | validacion: 6990 
+Fold 3 2018-02 | train: 41467 | validacion: 6531 
+Fold 4 2018-03 | train: 46300 | validacion: 7083 
+Etiquetas maduras al corte global: 75172 
+Carpeta de resultados: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/03_protocolo_y_folds 
+=======================================================================
+
+==> 03 - Correlaciones train 
+[1/5] Leyendo variables, etiquetas y folds archivados...
+[2/5] Calculando correlaciones solo en el TRAIN de cada fold...
+  Fold 1 (2017-12): TRAIN=28322; completos=28306; validacion no usada=5675
+  Fold 2 (2018-01): TRAIN=32995; completos=32979; validacion no usada=6990
+  Fold 3 (2018-02): TRAIN=41467; completos=41451; validacion no usada=6531
+  Fold 4 (2018-03): TRAIN=46300; completos=46284; validacion no usada=7083
+[3/5] Dibujando matrices Pearson y Spearman y asociaciones con respuesta...
+[4/5] Documentando limitaciones y comprobando integridad...
+[5/5] ETAPA 3 v1.1: CORRELACIONES COMPLETADAS; SOLO ENTRENAMIENTO
+ fold mes_validacion n_train n_completos n_omitidos_solo_para_correlacion
+    1        2017-12   28322       28306                               16
+    2        2018-01   32995       32979                               16
+    3        2018-02   41467       41451                               16
+    4        2018-03   46300       46284                               16
+ n_validacion_NO_utilizados
+                       5675
+                       6990
+                       6531
+                       7083
+Matrices y tablas: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/03_protocolo_y_folds/correlaciones 
+Graficos: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/03_correlaciones 
+NO se modificaron los resultados de Etapas 1-8.
+
+==> 04 - Baseline y OLS 
+Generando: 01_rmse_validacion_por_modelo.png 
+  VALIDADO: 01_rmse_validacion_por_modelo.png | 37752 bytes
+Generando: 02_r2_validacion_por_fold.png 
+  VALIDADO: 02_r2_validacion_por_fold.png | 68310 bytes
+Generando: 01_rmse_validacion_por_modelo.pdf 
+  VALIDADO: 01_rmse_validacion_por_modelo.pdf | 4909 bytes
+Generando: 02_r2_validacion_por_fold.pdf 
+  VALIDADO: 02_r2_validacion_por_fold.pdf | 4818 bytes
+
+ETAPA 4B v1.4 COMPLETADA - GRAFICOS CON R BASE
+Comparabilidad: pedidos, fechas, predicciones y metricas verificadas.
+Archivos originales de resultados: SIN CAMBIOS (MD5).
+Se regeneraron 2 PNG y 2 PDF en: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/04_baseline_y_ols 
+No se entrenaron modelos ni se consultó el test histórico.
+
+=======================================================================
+ETAPA 4 COMPLETADA - BASELINE Y OLS; SOLO DESARROLLO
+                  modelo rmse_promedio mae_promedio r2_promedio
+      B_pedido_geografia        9.9257       6.4137    0.167123
+ C_catalogo_exploratoria        9.9404       6.4246    0.164830
+              A_temporal       11.0605       7.6508   -0.033005
+    Baseline_media_train       11.3410       7.6542   -0.085694
+
+Resultados: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/04_baseline_y_ols 
+Graficos: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/04_baseline_y_ols 
+=======================================================================
+
+==> 05 - Regularizacion 
+[1/8] Cargando fuentes y verificando integridad del trabajo anterior...
+[2/8] Verificando folds externos, fechas y comparacion original de OLS B...
+[3/8] Construyendo validaciones temporales internas de cada fold...
+[4/8] Seleccionando lambda/alpha SOLO con validacion interna temporal...
+   Fold externo 1 de 4...
+   Fold externo 2 de 4...
+   Fold externo 3 de 4...
+   Fold externo 4 de 4...
+[5/8] Consolidando comparacion sin mezclar predicciones...
+[6/8] Guardando pruebas y trazabilidad reproducible...
+[7/8] Dibujando figuras comparativas en R base...
+[8/8] Certificando comparabilidad y finalizando...
+
+======================================================================
+ETAPA 5 COMPLETADA - REGULARIZACION; SOLO DESARROLLO
+               modelo rmse_promedio sd_rmse_folds mae_promedio r2_promedio
+            Ridge_min        9.9219       0.67225       6.4133    0.167744
+            Lasso_min        9.9231       0.66705       6.4084    0.167503
+       ElasticNet_min        9.9235       0.66509       6.4087    0.167415
+                OLS_B        9.9257       0.67591       6.4137    0.167123
+ Baseline_media_train       11.3410       0.90842       7.6542   -0.085694
+ sesgo_promedio
+        -2.2728
+        -2.2902
+        -2.2892
+        -2.2732
+        -3.1525
+
+RESULTADOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/05_regularizacion 
+GRAFICOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/05_regularizacion 
+CERTIFICADO: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/05_regularizacion/12_CONTROL_ETAPA5_APROBADO.txt 
+======================================================================
+
+==> 04 - Seleccion de variables interna 
+[1/7] Cargando datos archivados y protegiendo los resultados anteriores...
+[2/7] Reconstruyendo las 12 ventanas internas de la Etapa 5...
+  Fold externo 1 : 2017-12 
+  Fold externo 2 : 2018-01 
+  Fold externo 3 : 2018-02 
+  Fold externo 4 : 2018-03 
+[3/7] Consolidando decisiones y comparando predicciones por order_id...
+[4/7] Escribiendo SOLO nuevos resultados exploratorios...
+[5/7] Dibujando el RMSE interno de los candidatos (R base)...
+[6/7] Certificando que los resultados anteriores siguen intactos...
+[7/7] SELECCION EXPLORATORIA COMPLETADA, SIN REENTRENAR ETAPAS 5-8 NI TEST
+ fold_externo mes_externo especificacion n_variables rmse_interno_promedio
+            1     2017-12  B_original_10          10                6.1298
+            2     2018-01  B_original_10          10                6.1587
+            3     2018-02  B_original_10          10                7.1820
+            4     2018-03  B_original_10          10                8.3133
+ rmse_interno_B n_train n_validacion
+         6.1298   28322         5675
+         6.1587   32995         6990
+         7.1820   41467         6531
+         8.3133   46300         7083
+               modelo rmse_promedio sd_rmse_folds mae_promedio r2_promedio
+    Seleccion_interna        9.9257       0.67591       6.4137    0.167123
+ B_original_archivado        9.9257       0.67591       6.4137    0.167123
+   Baseline_archivado       11.3410       0.90842       7.6542   -0.085694
+ sesgo_promedio
+        -2.2732
+        -2.2732
+        -3.1525
+Resultados: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/04_seleccion_variables_exploratoria 
+Gráficos: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/04_seleccion_variables_exploratoria 
+
+==> 06 - Splines 
+[1/8] Cargando datos y controles de Etapas 1 a 5...
+[2/8] Revalidando IDs, fechas, madurez y muestra de OLS B...
+[3/8] Construyendo tres validaciones internas por cada fold externo...
+[4/8] Midiendo splines candidatos SOLO con validacion interna...
+   Fold externo 1 de 4...
+   Fold externo 2 de 4...
+   Fold externo 3 de 4...
+   Fold externo 4 de 4...
+[5/8] Comprobando que la comparacion contiene EXACTAMENTE los mismos pedidos...
+[6/8] Guardando resultados, decisiones y huellas de entrada...
+[7/8] Generando grafico simple y portable en R base...
+[8/8] Certificando archivos y recalculo por ID...
+
+ETAPA 6 COMPLETADA - SPLINES; SOLO DESARROLLO
+               modelo rmse_promedio sd_rmse_folds mae_promedio r2_promedio
+    Splines_B_anidado        9.9024       0.66062       6.3748    0.170852
+            Ridge_min        9.9219       0.67225       6.4133    0.167744
+            Lasso_min        9.9231       0.66705       6.4084    0.167503
+       ElasticNet_min        9.9235       0.66509       6.4087    0.167415
+   B_pedido_geografia        9.9257       0.67591       6.4137    0.167123
+ Baseline_media_train       11.3410       0.90842       7.6542   -0.085694
+ sesgo_promedio
+        -2.2791
+        -2.2728
+        -2.2902
+        -2.2892
+        -2.2732
+        -3.1525
+
+RESULTADOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/06_splines
+GRAFICOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/06_splines
+CERTIFICADO: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/06_splines/11_CONTROL_ETAPA6_APROBADO.txt
+
+==> 07 - Arboles y ensembles 
+[1/8] Validando archivos, especificacion B y fechas...
+[2/8] Comprobando los cuatro folds externos y sus IDs...
+[3/8] Replicando validaciones internas de las etapas 5-6...
+[4/8] Seleccionando configuraciones SOLO con validacion interna...
+  Fold externo 1 de 4...
+  Fold externo 2 de 4...
+  Fold externo 3 de 4...
+  Fold externo 4 de 4...
+[5/8] Verificando identificadores y reconstruyendo metricas por pedido...
+[6/8] Guardando CV, predicciones y decisiones de modelamiento...
+[7/8] Generando un grafico claro en R base...
+[8/8] Certificando sin tocar resultados previos...
+[AVERAGING] Emparejando Splines y Boosting por ID y fold...
+[AVERAGING] RMSE medio: 9.900887 dias; Splines: 9.902439 dias.
+
+ETAPA 7 COMPLETADA - ARBOLES Y ENSEMBLES; SOLO DESARROLLO
+                 modelo rmse_promedio sd_rmse_folds mae_promedio r2_promedio
+      Splines_B_anidado        9.9024       0.66062       6.3748    0.170852
+              Ridge_min        9.9219       0.67225       6.4133    0.167744
+              Lasso_min        9.9231       0.66705       6.4084    0.167503
+         ElasticNet_min        9.9235       0.66509       6.4087    0.167415
+     B_pedido_geografia        9.9257       0.67591       6.4137    0.167123
+     Boosting_B_anidado        9.9833       0.72389       6.3986    0.157442
+        Arbol_B_anidado       10.1407       0.66599       6.5294    0.129570
+ RandomForest_B_anidado       10.2133       0.85733       6.4998    0.119531
+   Baseline_media_train       11.3410       0.90842       7.6542   -0.085694
+ sesgo_promedio
+        -2.2791
+        -2.2728
+        -2.2902
+        -2.2892
+        -2.2732
+        -2.5486
+        -2.7296
+        -2.9552
+        -3.1525
+
+RESULTADOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/07_ensembles
+GRAFICOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/07_ensembles
+CERTIFICADO: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/07_ensembles/11_CONTROL_ETAPA7_APROBADO.txt
+
+==> 08 - Diagnosticos 
+[1/7] Verificando fuentes y certificados...
+[2/7] Leyendo solo los modelos de la comparacion B...
+[3/7] Comprobando IDs y respuestas reales comunes...
+[4/7] Calculando errores por fold y diagnosticos exploratorios...
+[5/7] Guardando tablas y una figura sin paquetes adicionales...
+[6/7] Verificando integridad de las entradas y archivos escritos...
+[7/7] ETAPA 8 COMPLETADA - DIAGNOSTICOS; SIN MODELOS NI TEST
+                 modelo rmse_promedio r2_promedio sesgo_promedio
+      Splines_B_anidado      9.902439  0.17085204      -2.279082
+              Ridge_min      9.921887  0.16774426      -2.272760
+              Lasso_min      9.923060  0.16750279      -2.290188
+         ElasticNet_min      9.923511  0.16741466      -2.289183
+     B_pedido_geografia      9.925667  0.16712340      -2.273166
+     Boosting_B_anidado      9.983279  0.15744190      -2.548582
+        Arbol_B_anidado     10.140668  0.12957019      -2.729599
+ RandomForest_B_anidado     10.213323  0.11953088      -2.955191
+   Baseline_media_train     11.340962 -0.08569391      -3.152485
+Resultados: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/08_diagnostico_errores
+Graficos: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/08_diagnostico_errores
+
+==> 09 - Inferencia 
+[1/7] Verificando fuentes, certificados y proteccion de resultados...
+[2/7] Recuperando exclusivamente el entrenamiento del fold 4...
+[3/7] Reconstruyendo la matriz de OLS B con la receta original...
+[4/7] Calculando errores estandar clasicos y robustos HC3...
+[5/7] Diagnosticos: colinealidad, residuos, heterocedasticidad e influencia...
+[6/7] Generando graficos descriptivos en R base, sin paquetes...
+[7/7] Certificando integridad y consistencia de archivos...
+
+ETAPA 9 COMPLETADA - INFERENCIA OLS B Y DIAGNOSTICOS; SOLO TRAIN
+ n_train p_coeficientes grados_libertad RMSE_ajuste_train MAE_ajuste_train
+   46300             36           46264          8.210586          5.03473
+ R2_ajuste_train R2_ajustado_train  sesgo_train max_dif_coef_archivado
+       0.2161506         0.2155576 4.462012e-17           4.973799e-14
+Coeficiente log_flete (HC3):
+ coeficiente_dias IC95_HC3_inf IC95_HC3_sup   p_valor_HC3
+         2.925121     2.655475     3.194767 7.643918e-100
+BP auxiliar p (orientativo): 2.242e-42
+RESULTADOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/09_inferencia_ols
+GRAFICOS: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/09_inferencia_ols
+
+==> 10 - Decision 
+[1/7] Leyendo las comparaciones verificadas y protegiendo los archivos anteriores...
+      Contraste de IDs, etiquetas y metricas desde predicciones por pedido...
+[2/7] Recalculando cada promedio, dispersion y metrica por fold...
+[3/7] Comprobando seleccion de variables, protocolos y limite de inferencia...
+[4/7] Guardando comparaciones y decision metodologica retrospectiva...
+[5/7] Dibujando una comparacion emparejada y clara de RMSE por fold...
+[6/7] Certificando que las etapas anteriores permanecen intactas...
+[7/7] ETAPA 10 COMPLETADA - SELECCION METODOLOGICA DOCUMENTADA; SIN TEST.
+Candidato por minimo RMSE medio: Splines_B_anidado
+RMSE: 9.9024 dias | R2 medio: 0.1709 | diferencia respecto OLS B: 0.0232 dias
+Mejora frente a media historica: 12.68% en RMSE de validacion.
+Estado: seleccion retrospectiva en desarrollo, NO test independiente ni modelo final reentrenado.
+Salidas: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/10_decision_modelo
+Grafico: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/graficos/10_decision_modelo/01_diferencias_rmse_con_splines_por_fold.png
+
+==> 11 - Candidato final 
+[1/8] Verificando entradas, IDs y la decision documentada...
+[2/8] Reconstruyendo la receta de las diez variables del OLS B...
+[3/8] Recalculando seis configuraciones en los cuatro folds de desarrollo...
+  Fold 1/4: 28322 train y 5675 validacion...
+  Fold 2/4: 32995 train y 6990 validacion...
+  Fold 3/4: 41467 train y 6531 validacion...
+  Fold 4/4: 46300 train y 7083 validacion...
+[4/8] Ajustando una sola vez el candidato con los 75.172 pedidos maduros...
+[5/8] Guardando una funcion de prediccion portatil junto al modelo...
+[6/8] Guardando configuraciones, integridad y limitaciones...
+[7/8] Certificando que los archivos de Etapas 1-10 siguen intactos...
+[8/8] Certificado final y conclusiones...
+
+ETAPA 11 APROBADA - CANDIDATO SPLINES B ENTRENADO SOLO CON DESARROLLO
+Fecha de corte (UTC): 2018-07-01 00:00:00
+Pedidos de entrenamiento: 75172
+Configuracion elegida: ns_df5_geo1
+RMSE media de ventanas de desarrollo examinadas: 9.894705
+ADVERTENCIA: esa media NO es una estimacion test independiente del modelo final.
+Maxima diferencia etapa6: 4.97e-14
+Modelo MD5: c58bda505905e0065ed09085859c7f23
+Resultados de Etapas 1-10 sin cambios MD5.
+El test historico NO fue consultado o recalculado.
+Archivos Etapa 11: E:/USACH/VI Semestre/Estadistica Aplicada/Laboratorio/Caso de estudio 1/Entrega/Para trabajar/Proyecto_Olist_caso1__REPRODUCCION_20261026_180102/resultados/11_modelo_candidato 
+Ejemplo en R: z <- readRDS("resultados/11_modelo_candidato/MODELO_CANDIDATO_SPLINES_B.rds")
+              z$predecir(nuevos_pedidos_con_las_10_columnas_B)
+
+ETAPA 12: RECONSTRUCCION AISLADA DE ETAPAS 01-11 COMPLETADA.

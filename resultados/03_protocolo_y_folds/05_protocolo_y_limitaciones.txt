@@ -1,0 +1,26 @@
+ETAPA 3: PROTOCOLO PREFIJADO ANTES DE ENTRENAR MODELOS NUEVOS
+Se usan exclusivamente pedidos aprobados en desarrollo: 2017-01-01 a 2018-06-30.
+El test historico julio-agosto de 2018 es CONOCIDO: no volvera a ser independiente.
+Se compararan las mismas familias bajo LOS MISMOS folds de validacion.
+Cuatro validaciones: dic-2017, ene-2018, feb-2018, mar-2018.
+Train de cada fold: aprobacion con al menos 45 dias de antiguedad respecto al corte
+Y entrega real observada antes del inicio del mes validado.
+Validacion: aprobacion en su mes y etiqueta conocida al corte global 2018-07-01.
+LIMITACION: solo pedidos entregados; censura y seguimiento desigual entre meses.
+Especificacion A: solo fechas/demora compra-aprobacion; evidencia directa al aprobar.
+Especificacion B: incluye geografia y caracteristicas de pedido; vigencia por verificar.
+Especificacion C: incluye metadatos del catalogo; vigencia historica no demostrada.
+No atribuir causalidad a diferencias geograficas descriptivas.
+Pedido sin detalle de items: faltante ESTRUCTURAL, no completar inventando media.
+Solo 16 etiquetas maduras carecen de peso/volumen completos; revisar en cada fold.
+Si se usa peso/volumen: media aritmetica exclusivamente de TRAIN de cada fold;
+verificar no negatividad y considerar alternativa sin esas variables o casos completos.
+NO usar promedio de toda la base; NO imputar fecha real de entrega ni respuesta.
+Los mismos IDs de validacion se usaran para comparar todas las especificaciones.
+Las conversiones, codificaciones, imputaciones y selecciones deben ajustarse en TRAIN.
+Reglas de complejidad e hiperparametros se definirán y ejecutarán dentro del train.
+alpha=0.05 es significancia para inferencia (IC 95%): NO criterio para filtrar R2.
+alpha de elastic-net es un HIPERPARAMETRO distinto de la significancia 0.05.
+La tardanza no se usa como predictor de la duracion: requiere la entrega futura.
+No hay modelos ajustados ni RMSE, MAE, R2 o test calculados en esta etapa.
+Siguiente: ETAPA 4 - preprocesamiento seguro, modelos y comparacion de validacion.

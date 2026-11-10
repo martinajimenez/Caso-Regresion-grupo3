@@ -1,0 +1,7 @@
+CONTROL APROBADO ETAPA 6 v1.0
+Revisadas fechas e IDs de los cuatro folds, y codificacion solo train.
+Tres folds internos anidados para seleccionar df e interaccion.
+Splines calculados solo en datos de entrenamiento de cada ventana.
+Recalculadas metricas desde cada prediccion individual por order_id.
+Comparacion con OLS B y regularizados sobre los mismos pedidos por fold.
+No se consulto test historico ni se modificaron Etapas 1-5.

@@ -1,0 +1,17 @@
+ETAPA 11 | AJUSTE DE UN CANDIDATO SPLINES PARA ENTREGA | NO TEST INDEPENDIENTE
+Se utiliza solo Olist de desarrollo con etiqueta conocida y aprobacion madura >=45 dias al 01/07/2018.
+Muestra de ajuste definitiva: 75.172 pedidos entregados elegibles.
+Se mantienen las diez entradas originales B, incluida la geografia del vendedor.
+La grilla df=3,4,5 y geografia x log(flete) con/sin interaccion es EXACTAMENTE la Etapa 6.
+La receta (estados raros y transformaciones) se aprende dentro de cada entrenamiento.
+La configuracion final se escoge con cuatro ventanas de desarrollo diciembre 2017-marzo 2018.
+Estas ventanas YA fueron examinadas en la investigacion. Sus errores no son test nuevo.
+La seleccion de la familia Splines fue retrospectiva a las comparaciones de desarrollo.
+El RDS contiene el ajuste, la receta y una funcion $predecir(datos_B).
+La funcion conserva predicciones originales sin truncamiento; cualquier regla operativa debe validarse por separado.
+La disponibilidad historica de geografia de vendedor, articulos, flete y precio al aprobar
+es una hipotesis de negocio que debe validarse antes de uso operativo.
+La poblacion se limita a pedidos entregados, no cancelados o sin entrega observada.
+El test historico de julio-agosto 2018 ya fue utilizado y NO se leyo ni consulto aqui.
+El candidato NO cuenta con estimacion imparcial de rendimiento sobre test nuevo.
+No se realizo inferencia causal ni contraste de superioridad entre algoritmos.

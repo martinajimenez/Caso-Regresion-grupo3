@@ -1,0 +1,2 @@
+"modelo","rmse_promedio","mae_promedio","r2_promedio","sesgo_promedio","n_validacion","porcentaje_subestimaciones","porcentaje_sse_entregas_largas"
+"Averaging_Splines_Boosting",9.90088708147295,6.34467589672083,0.171381946150984,-2.4138321494972,26279,49.5909281175083,69.5063230027967

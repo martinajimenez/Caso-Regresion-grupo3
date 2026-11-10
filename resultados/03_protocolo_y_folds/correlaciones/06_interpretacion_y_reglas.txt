@@ -1,0 +1,19 @@
+ETAPA 3 v1.1: CORRELACIONES DESCRIPTIVAS SOLO DE ENTRENAMIENTO
+Las matrices estan disponibles por fold y metodo (CSV); las figuras ilustran TRAIN del fold 4.
+Todos los calculos con dias_entrega usan SOLO TRAIN de cada fold (sin validation/test).
+Correlaciones de numericas: Pearson lineal y Spearman monotona/por rangos.
+La variable binaria mismo_estado admite asociacion punto-biserial via Pearson.
+Hora, dia de semana, mes y estado cliente se tratan como CATEGORICAS (eta2);
+no asignar numeros arbitrarios a los estados para aplicar correlacion Pearson.
+Los valores NA de las matrices no se imputan: muestra comun de casos completos
+exclusivamente para el diagnostico y con su tamano informado por fold.
+Eta-cuadrado no se interpreta directamente como coeficiente de Pearson y
+puede verse favorecido por muchas categorias; no mide importancia del predictor.
+No existen umbrales de r o p-valores para eliminar automaticamente variables.
+La seleccion de variables futura debera hacerse SOLO en TRAIN de cada fold
+externo, con validaciones INTERNAS para elegir especificaciones; mantener
+identicos pedidos de validacion para comparar los modelos.
+B y C tienen supuestos pendientes de disponibilidad historica al aprobar.
+El test historico julio-agosto 2018 ya es conocido y NO fue utilizado.
+NINGUN MODELO ni hiperparametro se ha cambiado en esta ampliacion.
+Etapas 01-08: archivos de resultados previos deben conservar sus MD5.

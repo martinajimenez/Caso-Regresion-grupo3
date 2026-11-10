@@ -1,0 +1,9 @@
+CONTROL APROBADO - ETAPA 4 VERSION 1.4
+Se confrontaron las etiquetas con Orders original usando order_id.
+Se verificaron fechas de train y validacion por fold.
+Se comprobaron mismas validaciones y respuestas para los 4 modelos.
+Se recalcularon RMSE, MAE, R2 y sesgo desde predicciones guardadas.
+Se verifico el baseline con la media de train del fold.
+Se guardaron las huellas MD5 de los archivos de entrada.
+Los graficos de RMSE y R2 se crearon a partir de metricas verificadas.
+El test historico no fue reentrenado ni reevaluado.

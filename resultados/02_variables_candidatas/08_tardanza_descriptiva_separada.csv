@@ -1,0 +1,6 @@
+"indicador","valor","unidad"
+"pedidos_maduros_entregados_con_promesa",75172,"pedidos"
+"pedidos_que_llegaron_despues_de_fecha_prometida",5684,"pedidos"
+"porcentaje_de_pedidos_con_tardanza",7.561,"porcentaje"
+"tardanza_media_dias_todos_los_pedidos",0.8341,"dias"
+"tardanza_media_dias_solo_pedidos_tardios",11.0308,"dias"

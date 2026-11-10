@@ -1,0 +1,5 @@
+"modelo","nivel_objetivo","n_calibracion","orden_cuantil","q_error_absoluto","fecha_limite_etiquetas_calibracion"
+"Splines_fijo_enero",0.8,6819,5456,7.26686944974494,"2018-03-01"
+"Splines_fijo_enero",0.9,6819,6138,9.9859135867307,"2018-03-01"
+"Baseline_media_train",0.8,6819,5456,8.71372570759878,"2018-03-01"
+"Baseline_media_train",0.9,6819,6138,11.4953923742655,"2018-03-01"

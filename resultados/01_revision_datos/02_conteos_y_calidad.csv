@@ -1,0 +1,19 @@
+"concepto","n"
+"Pedidos originales: universo del archivo orders",99441
+"Aprobados en ventana de desarrollo (ene-2017 a jun-2018)",86162
+"Desarrollo con etiqueta observable y valida al corte",81950
+"Desarrollo sin etiqueta valida al corte (NO son test)",4212
+"Desarrollo: entrega faltante",2523
+"Desarrollo: entrega registrada pero no observable al corte",1661
+"Desarrollo: estado distinto de delivered",2519
+"Desarrollo: duracion no positiva con entrega observada",27
+"Desarrollo: compra posterior a aprobacion",0
+"Filas de articulos vinculadas a pedidos de desarrollo",97866
+"Pedidos de desarrollo sin fila de articulos",594
+"Pedidos de desarrollo sin ficha de cliente",0
+"Filas de articulos sin vendedor registrado en tabla sellers",0
+"Filas de articulos sin producto registrado en tabla products",0
+"Duplicados de (order_id, order_item_id) en desarrollo",0
+"Duplicados customer_id vinculados al desarrollo",0
+"Duplicados seller_id vinculados al desarrollo",0
+"Duplicados product_id vinculados al desarrollo",0

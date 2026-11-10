@@ -1,0 +1,8 @@
+ETAPA 09 APROBADA (CONTROLES AUTOMATICOS)
+No se modificaron archivos de resultados anteriores (MD5).
+n train fold4: 46300
+Coeficientes: 36
+Max diferencia beta vs OLS B Etapa 4: 4.97379915032e-14
+Regla alfa=0.05, IC=95%, errores HC3 y clasicos.
+NO se consulto el test historico. NO se cambiaron modelos anteriores.
+Control de ejecucion RStudio adicional a revisiones independientes.

@@ -1,0 +1,8 @@
+"archivo","ruta","md5"
+"folds","resultados/03_protocolo_y_folds/04_ids_train_validacion.csv","95060971170bb3f60bb656b26be35f4b"
+"pred04","resultados/04_baseline_y_ols/03_predicciones_validacion.csv","04158df9e547d72ff10e52a00f1a9f60"
+"pred05","resultados/05_regularizacion/05_predicciones_validacion_regularizados.csv","c9a7d1552d79e1cf835530190169d54b"
+"pred06","resultados/06_splines/05_predicciones_splines_por_pedido.csv","dd5c21c43d9835e481e86cc745ba83d0"
+"pred07","resultados/07_ensembles/05_predicciones_validacion.csv","166528c3b5bffbfcd939c8e6e5bf5dfe"
+"resumen07","resultados/07_ensembles/07_comparacion_comun_resumen.csv","32758555067e1dd16b645ffda7ba35fd"
+"certificado07","resultados/07_ensembles/11_CONTROL_ETAPA7_APROBADO.txt","d9160cd7f4e0c4dde3f44ef14b58401f"

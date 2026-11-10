@@ -1,0 +1,27 @@
+ETAPA 16 - SENSIBILIDAD CON RESPUESTA TRANSFORMADA log(dias)
+
+Objetivo: seguir la recomendacion del curso (supuestos1.R) de transformar la respuesta cuando los
+residuos no son normales, y ver si cambia la conclusion. NO cambia el candidato congelado de la etapa 11.
+
+1. Supuestos (lm en el train del fold 4)
+- shapiro.test: W pasa de 0.652 (dias) a 0.991 (log); W = 1 seria normalidad perfecta.
+- lmtest::bptest: BP pasa de 367 (dias) a 1596 (log): la varianza no constante NO se corrige.
+- Ver QQ antes/despues (figura 01) y plot(modelo, which = 1:4) del modelo en log (figura 02).
+
+2. Error de prediccion en dias (promedio de 4 folds, OLS B)
+- En dias:            RMSE 9.926 | MAE 6.414 | mediana error abs. 4.372 | Spearman 0.596
+- En log, con exp():  RMSE 10.414 | MAE 6.532 | mediana error abs. 3.910 | Spearman 0.593
+- Folds donde log tiene menor mediana del error absoluto: 4 de 4; menor RMSE: 0 de 4.
+
+3. Lectura
+- La transformacion log acerca los residuos a la normalidad, como anticipa el curso, pero no resuelve
+  la heterocedasticidad: ese supuesto sigue sin cumplirse, por eso la inferencia usa errores robustos (etapa 09).
+- exp() de una prediccion en log estima la MEDIANA de los dias, no la media: por eso tiende a bajar la
+  mediana del error absoluto y a subir el RMSE, que castiga mas los pedidos muy demorados.
+- El orden de los pedidos (Spearman) casi no cambia: la transformacion no mejora la capacidad de ordenar.
+- Conclusion: se conserva el modelo en dias para la decision (predice la media, que es lo que mide el RMSE),
+  y la version en log se reporta como sensibilidad que valida los supuestos.
+
+4. Limitaciones
+- Solo OLS B; los demas modelos no se reajustaron en log.
+- Mismos 4 folds ya examinados: no es test nuevo. Test julio-agosto 2018 no consultado.

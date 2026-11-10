@@ -1,0 +1,6 @@
+CONTROL APROBADO - ETAPA 16 (SENSIBILIDAD log)
+lm() en dias reproduce el OLS B archivado: max dif 7.68e-12 (tolerancia 1e-07).
+Receta aprendida solo con train de cada fold; mismos pedidos de validacion que etapas 04-15.
+Resultados de etapas anteriores sin cambios MD5.
+Candidato etapa 11 no modificado. Test historico no consultado.
+R: R version 4.6.2 (2026-10-29 ucrt)

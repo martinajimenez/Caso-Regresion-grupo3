@@ -1,0 +1,7 @@
+"parametro","valor"
+"semilla","20261104"
+"n_max_shapiro","5000"
+"alfa","0.05"
+"fold_diagnostico","4"
+"umbral_frecuencia_estado","100"
+"tolerancia_reconstruccion","1e-07"

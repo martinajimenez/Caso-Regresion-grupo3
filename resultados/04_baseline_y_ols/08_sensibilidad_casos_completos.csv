@@ -1,0 +1,5 @@
+"fold","contraste","n_train_completo","n_train_imputado","rmse_cc","rmse_imputado"
+1,"C_casos_completos_vs_imputacion",28306,28322,10.0099964248081,10.0105040568606
+2,"C_casos_completos_vs_imputacion",32979,32995,8.94299378663576,8.9432054787823
+3,"C_casos_completos_vs_imputacion",41451,41467,10.4521578473166,10.4523010391326
+4,"C_casos_completos_vs_imputacion",46284,46300,10.3555845033643,10.3556602013136

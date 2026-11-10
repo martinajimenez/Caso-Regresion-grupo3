@@ -1,0 +1,2 @@
+"n_train","p_coeficientes","grados_libertad","RMSE_ajuste_train","MAE_ajuste_train","R2_ajuste_train","R2_ajustado_train","sesgo_train","max_dif_coef_archivado"
+46300,36,46264,8.210586448777,5.03472965859112,0.216150607974501,0.215557604154665,4.46201238023754e-17,4.9737991503207e-14

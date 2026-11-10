@@ -1,0 +1,9 @@
+"fold","modelo","segmento","n","rmse","mae"
+1,"Splines_B_anidado","vendedor_en_otro_estado",3633,11.2220456649937,7.34484830427263
+1,"Splines_B_anidado","todos_vendedores_mismo_estado",2042,7.34474950480466,4.4323096612912
+2,"Splines_B_anidado","vendedor_en_otro_estado",4501,10.0160359076224,6.43113727718907
+2,"Splines_B_anidado","todos_vendedores_mismo_estado",2489,6.57439334270341,4.38242053355981
+3,"Splines_B_anidado","vendedor_en_otro_estado",4392,11.6490352299684,7.44863336518906
+3,"Splines_B_anidado","todos_vendedores_mismo_estado",2139,7.20837364296191,4.92554824373547
+4,"Splines_B_anidado","vendedor_en_otro_estado",4503,11.8951320868798,8.27172196670893
+4,"Splines_B_anidado","todos_vendedores_mismo_estado",2580,6.47963865151663,4.44618782150402

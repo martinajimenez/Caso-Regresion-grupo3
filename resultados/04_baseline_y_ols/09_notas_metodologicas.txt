@@ -1,0 +1,27 @@
+ETAPA 4: PRIMERA COMPARACION DE REGRESION LINEAL (OLS) EN DESARROLLO
+SOLO desarrollo y validacion; NO se reevalua el test historico 2018-07/08.
+El test original ya es conocido; cualquier nuevo modelo es exploratorio/post-test.
+Las tres especificaciones A/B/C fueron definidas por criterio previo en etapa 3.
+Mismo calendario y mismos IDs de validacion para todos los modelos.
+Baseline: media aritmetica de la respuesta en el entrenamiento de cada fold.
+OLS A: variables temporales; B: suma caracteristicas de pedido y geografia;
+C: agrega peso y volumen del catalogo; vigencia historica aun no probada.
+C: faltantes de peso/volumen imputados con la MEDIA ARITMETICA de TRAIN.
+Se verifica como sensibilidad un ajuste C con casos completos de entrenamiento.
+No se imputan etiquetas ni faltantes estructurales de items; no se eliminan outliers.
+log1p aplica a conteos, precios, fletes, peso y volumen; sin usar el target.
+Hora, dia y mes se codifican con seno/coseno por periodicidad.
+Estados poco frecuentes (<100 pedidos TRAIN) agrupados en OTROS por fold.
+RMSE y MAE: errores en dias. R2=1-SSE/SST del mes validado; puede ser negativo.
+La tabla principal NO mezcla un subgrupo con la comparacion global de modelos.
+El diagnostico geografico esta en archivo aparte por requisito de la pauta.
+Promedios de 4 folds: DESCRIPTIVOS; no equivalen a prueba de superioridad.
+NO se usa alpha=0.05 para seleccionar por RMSE ni forzar R2 alto.
+La inferencia con IC95/alpha=0.05 requiere supuestos y se analizara por separado.
+No probar la disponibilidad historica de vendedor/producto es una LIMITACION.
+Objetivo: comprobar cuanto aporta la informacion, no inventar mejora de precision.
+VALIDACION REFORZADA: IDs, fechas y dias de entrega comparados con CSV original.
+Se verifica en cada fold la misma respuesta por pedido y las metricas de prediccion.
+Graficos v1.4: R base, barras RMSE desde cero y matriz R2 por mes.
+El archivo 11_CONTROL_COMPARABILIDAD_APROBADO.txt certifica controles superados.
+Si falta dicho archivo, NO usar una tabla anterior como resultado de esta corrida.

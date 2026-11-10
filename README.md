@@ -17,13 +17,13 @@ Predice, en el momento en que se **aprueba** un pedido de comercio electrónico,
 
 ## Resultado principal (validación temporal, promedio de 4 meses)
 
-| Modelo | RMSE (días) | MAE (días) | R² | vs baseline |
+| Modelo | RMSE (días) | MAE (días) | R² | Reducción RMSE vs baseline |
 |---|---|---|---|---|
 | Baseline (media del entrenamiento) | 11,341 | 7,654 | −0,086 | — |
-| OLS | 9,926 | 6,414 | 0,167 | −12,5 % |
-| **Splines naturales (modelo elegido)** | **9,902** | **6,375** | **0,171** | **−12,7 %** |
-| Gradient Boosting | 9,983 | 6,399 | 0,157 | −12,0 % |
-| Random Forest | 10,213 | 6,500 | 0,120 | −9,9 % |
+| OLS | 9,926 | 6,414 | 0,167 | 12,5 % |
+| **Splines naturales (modelo elegido)** | **9,902** | **6,375** | **0,171** | **12,7 %** |
+| Gradient Boosting | 9,983 | 6,399 | 0,157 | 12,0 % |
+| Random Forest | 10,213 | 6,500 | 0,120 | 9,9 % |
 
 La tabla completa de las 10 alternativas está en `resultados/10_decision_modelo/08_comparacion_10_alternativas.csv`.
 
